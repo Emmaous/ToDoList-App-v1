@@ -91,6 +91,7 @@
             this.newTaskBtn.TabIndex = 6;
             this.newTaskBtn.Text = "New";
             this.newTaskBtn.UseVisualStyleBackColor = true;
+            this.newTaskBtn.Click += new System.EventHandler(this.newTaskBtn_Click);
             // 
             // saveTaskBtn
             // 
@@ -100,6 +101,7 @@
             this.saveTaskBtn.TabIndex = 7;
             this.saveTaskBtn.Text = "Save";
             this.saveTaskBtn.UseVisualStyleBackColor = true;
+            this.saveTaskBtn.Click += new System.EventHandler(this.saveTaskBtn_Click);
             // 
             // deleteTaskBtn
             // 
@@ -109,6 +111,7 @@
             this.deleteTaskBtn.TabIndex = 8;
             this.deleteTaskBtn.Text = "Delete";
             this.deleteTaskBtn.UseVisualStyleBackColor = true;
+            this.deleteTaskBtn.Click += new System.EventHandler(this.deleteTaskBtn_Click);
             // 
             // editTaskBtn
             // 
@@ -118,6 +121,7 @@
             this.editTaskBtn.TabIndex = 9;
             this.editTaskBtn.Text = "Edit";
             this.editTaskBtn.UseVisualStyleBackColor = true;
+            this.editTaskBtn.Click += new System.EventHandler(this.editTaskBtn_Click);
             // 
             // myListAppView
             // 
