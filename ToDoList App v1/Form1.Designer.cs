@@ -121,6 +121,7 @@
             // 
             // myListAppView
             // 
+            this.myListAppView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.myListAppView.BackgroundColor = System.Drawing.SystemColors.ControlText;
             this.myListAppView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.myListAppView.GridColor = System.Drawing.SystemColors.HighlightText;
@@ -147,6 +148,7 @@
             this.Controls.Add(this.titleCard);
             this.Name = "ToDoList";
             this.Text = "MyList App v1";
+            this.Load += new System.EventHandler(this.ToDoList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.myListAppView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

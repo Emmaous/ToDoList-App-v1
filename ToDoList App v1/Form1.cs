@@ -16,5 +16,19 @@ namespace ToDoList_App_v1
         {
             InitializeComponent();
         }
+
+        //declaring Datatable that will display to the data grid view
+        DataTable todoList = new DataTable();
+        bool isEditing = false;
+
+        private void ToDoList_Load(object sender, EventArgs e)
+        {
+            //creating columns
+            todoList.Columns.Add("Title");
+            todoList.Columns.Add("Description");
+
+            //point the data grid view to data source
+            myListAppView.DataSource = todoList;
+        }
     }
 }
