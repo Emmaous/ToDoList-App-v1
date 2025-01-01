@@ -37,6 +37,8 @@
             this.saveTaskBtn = new System.Windows.Forms.Button();
             this.deleteTaskBtn = new System.Windows.Forms.Button();
             this.editTaskBtn = new System.Windows.Forms.Button();
+            this.myListAppView = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.myListAppView)).BeginInit();
             this.SuspendLayout();
             // 
             // titleCard
@@ -117,12 +119,23 @@
             this.editTaskBtn.Text = "Edit";
             this.editTaskBtn.UseVisualStyleBackColor = true;
             // 
+            // myListAppView
+            // 
+            this.myListAppView.BackgroundColor = System.Drawing.SystemColors.ControlText;
+            this.myListAppView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.myListAppView.GridColor = System.Drawing.SystemColors.HighlightText;
+            this.myListAppView.Location = new System.Drawing.Point(12, 169);
+            this.myListAppView.Name = "myListAppView";
+            this.myListAppView.Size = new System.Drawing.Size(712, 304);
+            this.myListAppView.TabIndex = 10;
+            // 
             // ToDoList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(736, 485);
+            this.Controls.Add(this.myListAppView);
             this.Controls.Add(this.editTaskBtn);
             this.Controls.Add(this.deleteTaskBtn);
             this.Controls.Add(this.saveTaskBtn);
@@ -134,6 +147,7 @@
             this.Controls.Add(this.titleCard);
             this.Name = "ToDoList";
             this.Text = "MyList App v1";
+            ((System.ComponentModel.ISupportInitialize)(this.myListAppView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +164,7 @@
         private System.Windows.Forms.Button saveTaskBtn;
         private System.Windows.Forms.Button deleteTaskBtn;
         private System.Windows.Forms.Button editTaskBtn;
+        private System.Windows.Forms.DataGridView myListAppView;
     }
 }
 
